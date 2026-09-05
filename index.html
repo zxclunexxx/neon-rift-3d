@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Rift 3D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud" class="hud hidden">
+    <div class="hud-card">
+      <span class="label">СЧЁТ</span>
+      <strong id="score">0</strong>
+    </div>
+    <div class="hud-card">
+      <span class="label">ЩИТ</span>
+      <div class="bar"><div id="shieldBar" class="fill"></div></div>
+    </div>
+    <div class="hud-card">
+      <span class="label">СКОРОСТЬ</span>
+      <strong id="speed">1.0x</strong>
+    </div>
+  </div>
+
+  <div id="centerPanel" class="panel">
+    <h1>NEON RIFT <span>3D</span></h1>
+    <p class="subtitle">Аркадный 3D-раннер: лети через разлом, собирай кристаллы и сбивай дронов.</p>
+    <div class="controls">
+      <p><b>WASD / стрелки</b> — управление кораблём</p>
+      <p><b>Space</b> — выстрел</p>
+      <p><b>P</b> — пауза</p>
+      <p><b>R</b> — рестарт</p>
+    </div>
+    <button id="startBtn">Играть</button>
+    <p class="tip">Игра работает локально: открой этот файл в браузере.</p>
+  </div>
+
+  <div id="pauseBadge" class="pause hidden">ПАУЗА</div>
+
+  <script src="src/game.js"></script>
+</body>
+</html>
